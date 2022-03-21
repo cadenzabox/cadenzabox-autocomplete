@@ -31,3 +31,24 @@
     }
 </style>
 ```
+
+### Props
+```
+// If we use groupByType: true then we can set ordering number of each type
+orderTag: string | number // default: 1 | optional
+orderRelease: string | number // default: 2 | optional
+orderTrack: string | number // default: 3 | optional
+orderComposer: string | number // default: 4
+____________________________________________________________________________
+baseApiUrl: string // default: https://api.cadenzabox.com | required
+acRedirectUrl: string // default: '' | required
+____________________________________________________________________________
+groupByType: boolean // default: false | optional
+showTypeIcon: boolean // default: false | optional
+uiSearchOutside: boolean // default: false | optional
+uiSubmitOutside: boolean // default: false | optional
+openInNewTab: boolean // default: false | optional
+categoryName: string // default: '' | optional
+categoryLabel: string // default: Popular tags | optional
+inputSearchPlaceholder: string // default: Search here... | optional
+```
