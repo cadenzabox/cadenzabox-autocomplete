@@ -1,7 +1,7 @@
 <meta charset="utf-8">
-<title>cadenzabox-autocomplete demo</title>
+<title>Cadenzabox autocomplete example</title>
 <script src="https://unpkg.com/vue@2"></script>
-<script src="./cadenza-autocomplete.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/cadenzabox/cadenzabox-autocomplete/cadenzabox-autocomplete.min.js"></script>
 <link rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
       integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw=="
@@ -9,7 +9,8 @@
       referrerpolicy="no-referrer" />
 
 
-<cadenza-autocomplete group-by-type="true"></cadenza-autocomplete>
+<cadenzabox-autocomplete group-by-type="true"
+                      base-api-url="https://api.qa.cadenzabox.com"></cadenzabox-autocomplete>
 
 <style>
     body {
