@@ -3,7 +3,7 @@
 ## Script to include
 ```
 <script src="https://unpkg.com/vue@2"></script>
-<script src="./cadenza-autocomplete.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/cadenzabox/cadenzabox-autocomplete/cadenzabox-autocomplete.min.js"></script>
 <link rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
       integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw=="
@@ -13,17 +13,18 @@
 
 ### Tag to include
 ```
-<cadenza-autocomplete group-by-type="true"></cadenza-autocomplete>
+<cadenzabox-autocomplete group-by-type="true"
+                      base-api-url="https://api.qa.cadenzabox.com"></cadenzabox-autocomplete>
 ```
 
 ### Example on how to style elements inside autocomplete
 ```
 <style>
-    cadenza-autocomplete::part(autocomplete-in) {
+    cadenzabox-autocomplete::part(autocomplete-in) {
         background-color: white;
     }
-    cadenza-autocomplete::part(autocomplete__dropdown-h2),
-    cadenza-autocomplete::part(autocomplete__dropdown__col-h5) {
+    cadenzabox-autocomplete::part(autocomplete__dropdown-h2),
+    cadenzabox-autocomplete::part(autocomplete__dropdown__col-h5) {
         color: silver;
         text-transform: uppercase;
         font-size: 14px;
