@@ -1,0 +1,69 @@
+<meta charset="utf-8">
+<title>Cadenzabox autocomplete example</title>
+<meta http-equiv='cache-control' content='no-cache'>
+<meta http-equiv='expires' content='0'>
+<meta http-equiv='pragma' content='no-cache'>
+<script src="https://unpkg.com/vue@2"></script>
+<script src="https://cdn.jsdelivr.net/gh/cadenzabox/cadenzabox-autocomplete/cadenzabox-autocomplete.min.js"></script>
+<link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
+      integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
+
+
+<cadenzabox-autocomplete group-by-type="true"></cadenzabox-autocomplete>
+
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial;
+        background-color: black;
+    }
+
+    cadenzabox-autocomplete::part(autocomplete) {
+        background-color: transparent;
+    }
+
+    cadenzabox-autocomplete::part(autocomplete-in) {
+        background-color: white;
+    }
+    cadenzabox-autocomplete::part(autocomplete__dropdown-h2),
+    cadenzabox-autocomplete::part(autocomplete__dropdown__col-h5) {
+        color: silver;
+        text-transform: uppercase;
+        font-size: 14px;
+    }
+
+    cadenzabox-autocomplete::part(autocomplete-in__input-area),
+    cadenzabox-autocomplete::part(autocomplete-in__search),
+    cadenzabox-autocomplete::part(autocomplete-in__submit),
+    cadenzabox-autocomplete::part(autocomplete__dropdown),
+    cadenzabox-autocomplete::part(autocomplete__dropdown-tags) {
+        border: 0;
+    }
+
+    cadenzabox-autocomplete::part(autocomplete-in) {
+        border: 1px solid black;
+        border-radius: 5px;
+    }
+
+    cadenzabox-autocomplete::part(autocomplete__dropdown) {
+        top: calc(100% + 10px);
+        border: 1px solid black;
+        border-radius: 5px;
+    }
+
+    cadenzabox-autocomplete::part(autocomplete__dropdown-a) {
+        padding: 5px 10px;
+        background-color: black;
+        color: white;
+        border-radius: 5px;
+    }
+
+    cadenzabox-autocomplete::part(autocomplete__dropdown-results) {
+        max-height: 300px;
+    }
+</style>
+
