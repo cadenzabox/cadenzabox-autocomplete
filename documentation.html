@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Cadenzabox Autocomplete Documentation</title>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="https://www.w3schools.com/w3css/4/w3.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.9.1/styles/github.min.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: "Lato", sans-serif;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body>
+<div>
+    <div class="container">
+        <div class="header clearfix">
+            <h3 class="text-muted" style="margin: 0">
+                <img alt="Logo" src="https://demo.cadenzabox.com/images/cadenzabox/logos/cadenzabox-logo.svg"
+                     width="150">
+            </h3>
+        </div>
+
+        <div class="jumbotron" style="margin-top: 20px">
+            <h1>Autocomplete widget</h1>
+            <p class="lead">If you want to use this widget on your website. Feel free to</p>
+            <p><a class="btn btn-lg btn-success" href="#contact" role="button">Contact us</a></p>
+        </div>
+
+        <h3 id="script">Required script</h3>
+
+        <pre><code class="html">&lt;script src="https://unpkg.com/vue@2"&gt;&lt;/script&gt;
+&lt;script src="https://cdn.jsdelivr.net/gh/cadenzabox/cadenzabox-autocomplete/cadenzabox-autocomplete.min.js"&gt;&lt;/script&gt;
+
+<b style="color: forestgreen">// Include font-awesome script only in case you are using 'show-type-icon=true' data attribute</b>
+&lt;link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
+    integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"/&gt;
+</code></pre>
+
+        <h3 id="custom-tag">Custom tag</h3>
+        <pre><code class="html">&lt;cadenzabox-autocomplete ac-redirect-url="https://demo.cadenzabox.com"&gt;&lt;/cadenzabox-autocomplete&gt;</code></pre>
+
+        <h3 id="options">Available cadenzabox-autocomplete tag props (options)</h3>
+
+        <table class="table table-bordered">
+            <thead style="background-color: #f8f8f8,">
+            <tr>
+                <th>Attribute name</th>
+                <th>Type</th>
+                <th>Required</th>
+                <th>Default value</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>order-tag</td>
+                <td>string | number</td>
+                <td></td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>order-release</td>
+                <td>string | number</td>
+                <td></td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td>order-track</td>
+                <td>string | number</td>
+                <td></td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>order-composer</td>
+                <td>string | number</td>
+                <td></td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td>base-api-url</td>
+                <td>string</td>
+                <td></td>
+                <td>https://api.cadenzabox.com</td>
+            </tr>
+            <tr>
+                <td>ac-redirect-url (your cadenzabox app url)</td>
+                <td>string</td>
+                <td>true</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>group-by-type</td>
+                <td>boolean</td>
+                <td></td>
+                <td>false</td>
+            </tr>
+            <tr>
+                <td>show-type-icon</td>
+                <td>boolean</td>
+                <td></td>
+                <td>false</td>
+            </tr>
+            <tr>
+                <td>ui-search-outside</td>
+                <td>boolean</td>
+                <td></td>
+                <td>false</td>
+            </tr>
+            <tr>
+                <td>ui-submit-outside</td>
+                <td>boolean</td>
+                <td></td>
+                <td>false</td>
+            </tr>
+            <tr>
+                <td>open-in-new-tab</td>
+                <td>boolean</td>
+                <td></td>
+                <td>false</td>
+            </tr>
+            <tr>
+                <td>category-name</td>
+                <td>string</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>category-label</td>
+                <td>string</td>
+                <td></td>
+                <td>Popular tags</td>
+            </tr>
+            <tr>
+                <td>input-search-placeholder</td>
+                <td>string</td>
+                <td></td>
+                <td>Search here...</td>
+            </tr>
+            </tbody>
+        </table>
+
+        <footer class="footer">
+            <p>&copy; 2022 Cadenzabox</p>
+        </footer>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.9.1/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+</div>
+</body>
+</html>
