@@ -1,0 +1,20 @@
+{
+  "name": "cadenzabox-autocomplete",
+  "version": "1.0.0",
+  "description": "## Script to include ``` <script src=\"https://unpkg.com/vue@2\"></script> <script src=\"https://cdn.jsdelivr.net/gh/cadenzabox/cadenzabox-autocomplete/cadenzabox-autocomplete.min.js\"></script> <link rel=\"stylesheet\"       href=\"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css\"       integrity=\"sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw==\"       crossorigin=\"anonymous\"       referrerpolicy=\"no-referrer\" /> ```",
+  "main": "cadenzabox-autocomplete.js",
+  "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cadenzabox/cadenzabox-autocomplete.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cadenzabox/cadenzabox-autocomplete/issues"
+  },
+  "homepage": "https://github.com/cadenzabox/cadenzabox-autocomplete#readme"
+}
